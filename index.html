@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1 class="logo"><img src="logo_osom.jpg" alt="logo Osom Studio" class="logo__img"></h1>
+    <h2 class="header">Wypełnij formularz</h2>
+
+    <form class="form">
+        <span class="form__column">
+            <label class="form__item">First name:<input class="form__input" type="text" name="first" required></label>
+            <label class="form__item">Last name:<input class="form__input" type="text" name="last" required></label>
+            <label class="form__item">Login:<input class="form__input" type="text" name="login" required></label>
+        </span>
+        <span class="form__column">
+            <label class="form__item">User e-mail:<input id="email" class="form__input" type="email" name="email" required></label>
+            <label class="form__item" for="city-list">City:</label>
+            <select name="city" id="city-list" class="form__input form__input--city" required>
+                <option value="Warszawa">Warszawa</option>
+                <option selected="selected" value="Lodz">Lodz</option>
+                <option value="Wroclaw">Wroclaw</option>
+                <option value="Krakow">Krakow</option>
+                <option value="Katowice">Katowice</option>
+            </select>
+            <input id="submit" type="submit" class="form__submit" value="Wyślij">
+        </span>
+        <span class="form__column">
+            <label class="form__text" for="check">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
+                <span class="form__agree"></spanclass><input type="checkbox" name="agree" id="check" value="agree" required>Agree</span>
+        </span>
+    </form>
+    
+
+    <script src="script.js">
+
+
+    </script>
+  </body>
+</html>
